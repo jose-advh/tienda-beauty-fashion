@@ -243,3 +243,48 @@ footer {
 .footer__boton:hover {
   background-color: white;
 }
+
+/* RESPONSIVE PAGINA PRINCIPAL */
+
+@media screen and (max-width: 768px) {
+  .navegacion__index {
+    width: 100%;
+  }
+
+  .imagenes__principal {
+    flex-direction: column;
+  }
+
+  .titulo__principal {
+    width: 90%;
+    text-align: center;
+  }
+
+  .imagenes__contenedor {
+    width: 500px;
+  }
+
+  .prenda {
+    width: 45%;
+  }
+
+  .footer__contenido {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .footer__descripcion {
+    width: 100%;
+  }
+
+  .footer__boton {
+    margin: auto;
+  }
+
+  .footer__input {
+    margin: auto;
+  }
+}
