@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&family=Rubik+Glitch&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  height: 13vh;
+}
+
+.navegacion__index {
+  position: fixed;
+  width: 90%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.753);
+}
+
+.lista__paginas {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lista__enlace {
+  color: black;
+  font-weight: 600;
+}
+
+.imagenes__principal {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.titulo__principal {
+  font-size: 5rem;
+  font-family: "Ceviche One", system-ui;
+  width: 29%;
+}
+
+.imagenes__contenedor {
+  display: flex;
+  gap: 10px;
+}
+
+.imagen {
+  width: 400px;
+  height: 533px;
+  overflow: hidden;
+  position: relative;
+}
+
+.imagen__principal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.imagen__principal:hover {
+  transform: scale(1.1);
+}
