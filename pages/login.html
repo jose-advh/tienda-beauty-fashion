@@ -23,7 +23,7 @@
 
         <ul class="lista__paginas">
           <li>
-            <a href="login.html"
+            <a href="#"
               ><svg
                 class="icono__enlace"
                 viewBox="0 0 24 24"
@@ -93,7 +93,7 @@
         </ul>
 
         <div class="iconos__movil">
-          <a href="login.html"
+          <a href="#"
             ><svg
               class="icono__enlace--movil"
               viewBox="0 0 24 24"
@@ -130,66 +130,32 @@
     <span class="numero__compras">1</span>
 
     <main>
-      <section class="imagenes__principal imagenes__principal--nosotros">
-        <h2 class="titulo__principal titulo__principal--nosotros">
-          Beauty Fashion, nuestra familia.
-        </h2>
-        <article class="imagenes__contenedor">
-          <div class="imagen">
-            <img
-              src="../media/modelos/familia.jpg"
-              class="imagen__principal"
-              alt=""
-            />
-          </div>
-        </article>
-      </section>
       <section class="informacion__nosotros">
         <article class="contenedor__prendas">
-          <figure class="prenda">
-            <img
-              src="../media/productos/camisas/front_cami_roja.webp"
-              alt=""
-              class="prenda__imagen"
-            />
-
-            <figcaption class="prenda__descripcion">
-              <h3>Esteban Monsalvo</h3>
-            </figcaption>
-          </figure>
-          <figure class="prenda">
-            <img
-              src="../media/productos/camisas/front_cami_roja.webp"
-              alt=""
-              class="prenda__imagen"
-            />
-
-            <figcaption class="prenda__descripcion">
-              <h3>Abraham Valiente</h3>
-            </figcaption>
-          </figure>
-          <figure class="prenda">
-            <img
-              src="../media/productos/camisas/front_cami_roja.webp"
-              alt=""
-              class="prenda__imagen"
-            />
-
-            <figcaption class="prenda__descripcion">
-              <h3>Sebastián Bovea</h3>
-            </figcaption>
-          </figure>
-          <figure class="prenda">
-            <img
-              src="../media/productos/camisas/front_cami_roja.webp"
-              alt=""
-              class="prenda__imagen"
-            />
-
-            <figcaption class="prenda__descripcion">
-              <h3>David Mendoza</h3>
-            </figcaption>
-          </figure>
+          <form action="#" class="formulario">
+            <h2 class="formulario__titulo">Iniciar Sesión</h2>
+            <div class="contenedor__input">
+              <label for="email">Correo</label>
+              <input
+                type="email"
+                placeholder="ejemplo@gmail.com"
+                class="formulario__input"
+                id="email"
+              />
+            </div>
+            <div class="contenedor__input">
+              <label for="pass">Contraseña</label>
+              <input
+                type="password"
+                placeholder="Contraseña"
+                class="formulario__input"
+                id="pass"
+              />
+            </div>
+            <p>¿No tienes cuenta? <a href="registro.html">Registro</a></p>
+            <br />
+            <button class="formulario__boton">Iniciar</button>
+          </form>
         </article>
       </section>
     </main>
