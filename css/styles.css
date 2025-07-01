@@ -187,7 +187,6 @@ header {
   visibility: visible;
 }
 
-/* Contenido de ejemplo */
 .contenido__principal {
   padding: 2rem;
   margin-top: 13vh;
@@ -200,10 +199,18 @@ header {
   align-items: center;
 }
 
+.imagenes__principal--nosotros {
+  justify-content: center;
+}
+
 .titulo__principal {
   font-size: 5rem;
   font-family: "Ceviche One", system-ui;
   width: 29%;
+}
+
+.titulo__principal--nosotros {
+  width: 50%;
 }
 
 .imagenes__contenedor {
@@ -448,4 +455,32 @@ footer {
   .overlay {
     display: none;
   }
+}
+
+/* SOBRE NOSTROS PAGINA */
+
+.informacion__nosotros {
+  margin-top: 50px !important;
+  width: 90%;
+  margin: auto;
+}
+
+hr {
+  margin-bottom: 20px !important;
+  margin-top: 20px !important;
+
+  width: 50%;
+  margin: auto;
+}
+
+.informacion__titulo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.informacion__texto {
+  font-size: 1.2rem;
+  margin-bottom: 10px !important;
+  width: 80%;
+  margin: auto;
 }
