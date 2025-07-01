@@ -9,40 +9,110 @@
   <body>
     <header>
       <nav class="navegacion__index">
-        <h2>Beauty Fashion</h2>
+        <h2 class="navegacion__logo">Beauty Fashion</h2>
+
+        <!-- Menú desktop -->
         <ul class="lista__paginas">
           <li><a href="#" class="lista__enlace">NOSOTROS</a></li>
           <li><a href="#" class="lista__enlace">CONTACTO</a></li>
           <li><a href="#" class="lista__enlace">EXCLUSIVIDAD</a></li>
         </ul>
+
         <ul class="lista__paginas">
           <li>
             <a href="#"
-              ><img
-                src="media/iconos/usuario.svg"
-                alt="usuario"
+              ><svg
                 class="icono__enlace"
-            /></a>
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                /></svg
+            ></a>
           </li>
           <li>
             <a href="#"
-              ><img
-                src="media/iconos/shop.svg"
-                alt="carrito de compras"
+              ><svg
                 class="icono__enlace"
-            /></a>
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                /></svg
+            ></a>
           </li>
           <li>
             <a href="#"
-              ><img
-                src="media/iconos/buscar.svg"
-                alt="barra de busqueda"
+              ><svg
                 class="icono__enlace"
-            /></a>
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                /></svg
+            ></a>
           </li>
         </ul>
+
+        <!-- Botón hamburguesa -->
+        <button class="boton__menu" id="botonMenu">
+          <div class="hamburguesa"></div>
+          <div class="hamburguesa"></div>
+          <div class="hamburguesa"></div>
+        </button>
       </nav>
     </header>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Menú móvil -->
+    <div class="menu__movil" id="menuMovil">
+      <div class="menu__contenido">
+        <ul class="lista__paginas--movil">
+          <li><a href="#" class="lista__enlace--movil">NOSOTROS</a></li>
+          <li><a href="#" class="lista__enlace--movil">CONTACTO</a></li>
+          <li><a href="#" class="lista__enlace--movil">EXCLUSIVIDAD</a></li>
+        </ul>
+
+        <div class="iconos__movil">
+          <a href="#"
+            ><svg
+              class="icono__enlace--movil"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              /></svg
+          ></a>
+          <a href="#"
+            ><svg
+              class="icono__enlace--movil"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+              /></svg
+          ></a>
+          <a href="#"
+            ><svg
+              class="icono__enlace--movil"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </div>
+
     <main>
       <section class="imagenes__principal">
         <h2 class="titulo__principal">
@@ -233,5 +303,60 @@
         </ul>
       </section>
     </footer>
+
+    <script>
+      // Variables
+      const botonMenu = document.getElementById("botonMenu");
+      const menuMovil = document.getElementById("menuMovil");
+      const overlay = document.getElementById("overlay");
+      const hamburguesas = document.querySelectorAll(".hamburguesa");
+
+      // Función para toggle del menú
+      function toggleMenu() {
+        menuMovil.classList.toggle("activo");
+        overlay.classList.toggle("activo");
+        hamburguesas.forEach((hamburguesa) => {
+          hamburguesa.classList.toggle("activo");
+        });
+      }
+
+      // Event listeners
+      botonMenu.addEventListener("click", toggleMenu);
+      overlay.addEventListener("click", toggleMenu);
+
+      // Cerrar menú al hacer clic en un enlace
+      const enlacesMovil = document.querySelectorAll(".lista__enlace--movil");
+      enlacesMovil.forEach((enlace) => {
+        enlace.addEventListener("click", toggleMenu);
+      });
+
+      // Cerrar menú con tecla Escape
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && menuMovil.classList.contains("activo")) {
+          toggleMenu();
+        }
+      });
+
+      // Prevenir scroll del body cuando el menú está abierto
+      function toggleBodyScroll() {
+        document.body.style.overflow = menuMovil.classList.contains("activo")
+          ? "hidden"
+          : "auto";
+      }
+
+      // Actualizar el scroll del body cuando se abre/cierra el menú
+      const observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          if (
+            mutation.type === "attributes" &&
+            mutation.attributeName === "class"
+          ) {
+            toggleBodyScroll();
+          }
+        });
+      });
+
+      observer.observe(menuMovil, { attributes: true });
+    </script>
   </body>
 </html>

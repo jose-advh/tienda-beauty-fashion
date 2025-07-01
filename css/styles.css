@@ -27,8 +27,13 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-
   border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+}
+
+.navegacion__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
 }
 
 .lista__paginas {
@@ -44,6 +49,8 @@ header {
 }
 
 .icono__enlace {
+  width: 24px;
+  height: 24px;
   transition: all 0.3s ease;
 }
 
@@ -54,6 +61,145 @@ header {
 .lista__enlace:hover {
   text-decoration: underline;
   text-underline-offset: 10px;
+}
+
+/* Botón hamburguesa */
+.boton__menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburguesa {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.hamburguesa.activo:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburguesa.activo:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguesa.activo:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Menú móvil */
+.menu__movil {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 65%;
+  height: 200dvh;
+  background-color: white;
+  z-index: 1000;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1rem;
+}
+
+.menu__movil.activo {
+  right: 0;
+}
+
+.menu__contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.lista__paginas--movil {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.lista__enlace--movil {
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.lista__enlace--movil:hover {
+  color: #666;
+  padding-left: 10px;
+}
+
+.iconos__movil {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icono__enlace--movil {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
+}
+
+.icono__enlace--movil:hover {
+  scale: 1.1;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200dvh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.overlay.activo {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Contenido de ejemplo */
+.contenido__principal {
+  padding: 2rem;
+  margin-top: 13vh;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .lista__paginas {
+    display: none;
+  }
+
+  .boton__menu {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu__movil {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
 }
 
 .imagenes__principal {
@@ -247,10 +393,6 @@ footer {
 /* RESPONSIVE PAGINA PRINCIPAL */
 
 @media screen and (max-width: 768px) {
-  .navegacion__index {
-    width: 100%;
-  }
-
   .imagenes__principal {
     flex-direction: column;
   }
