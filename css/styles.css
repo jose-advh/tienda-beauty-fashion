@@ -16,6 +16,8 @@ header {
 }
 
 .navegacion__index {
+  z-index: 3;
+  background-color: white;
   position: fixed;
   width: 90%;
   margin: auto;
@@ -26,7 +28,7 @@ header {
   justify-content: space-between;
   padding: 1rem;
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.753);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.459);
 }
 
 .lista__paginas {
@@ -38,6 +40,20 @@ header {
 .lista__enlace {
   color: black;
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.icono__enlace {
+  transition: all 0.3s ease;
+}
+
+.icono__enlace:hover {
+  scale: 1.1 !important;
+}
+
+.lista__enlace:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 .imagenes__principal {
@@ -74,4 +90,84 @@ header {
 
 .imagen__principal:hover {
   transform: scale(1.1);
+}
+
+/* FILTROS */
+
+.filtrar__prendas {
+  margin-top: 50px;
+  background-color: rgb(34, 34, 34);
+
+  border: 1px solid black;
+}
+
+.filtrar__navegacion {
+  width: 90%;
+  margin: auto;
+}
+
+.filtrar__lista {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.filtrar__enlace {
+  color: white;
+  font-weight: bold;
+}
+
+.filtrar__enlace:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+/* PRENDAS */
+
+.prendas {
+  margin-top: 50px;
+}
+
+.contenedor__prendas {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.prenda {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.prenda__descripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.prenda__imagen {
+  width: 85%;
+}
+
+.prenda__boton {
+  padding: 0.5rem 0.2rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.prenda__boton:hover {
+  background-color: black;
 }
