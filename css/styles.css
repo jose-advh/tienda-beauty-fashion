@@ -188,6 +188,7 @@ footer {
   padding: 1rem 0rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__lista {
@@ -205,4 +206,40 @@ footer {
 
 .footer__enlace:hover {
   font-size: 1.3rem;
+}
+
+.footer__subtitulo {
+  color: white;
+  font-size: 2rem;
+}
+
+.footer__descripcion {
+  color: white;
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+.footer__input {
+  width: 50%;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.footer__input::placeholder {
+  color: black;
+}
+
+.footer__boton {
+  width: 50%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: burlywood;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footer__boton:hover {
+  background-color: white;
 }
