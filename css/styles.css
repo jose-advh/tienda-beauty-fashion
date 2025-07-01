@@ -133,6 +133,7 @@ header {
   width: 90%;
   margin: auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -146,6 +147,7 @@ header {
 }
 
 .prenda__descripcion {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -157,7 +159,8 @@ header {
 
 .prenda__boton {
   padding: 0.5rem 0.2rem;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   outline: none;
   border: none;
   cursor: pointer;
@@ -170,4 +173,36 @@ header {
 
 .prenda__boton:hover {
   background-color: black;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 50px;
+  background-color: rgb(34, 34, 34);
+}
+
+.footer__contenido {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__enlace {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.footer__enlace:hover {
+  font-size: 1.3rem;
 }
