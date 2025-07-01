@@ -63,6 +63,18 @@ header {
   text-underline-offset: 10px;
 }
 
+.numero__compras {
+  z-index: 4;
+  font-size: 0.8rem;
+  position: fixed;
+  top: 1%;
+  right: 95px;
+  background-color: black;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100%;
+}
+
 /* Botón hamburguesa */
 .boton__menu {
   display: none;
@@ -372,6 +384,10 @@ footer {
 /* RESPONSIVE PAGINA PRINCIPAL */
 
 @media screen and (max-width: 768px) {
+  .numero__compras {
+    display: none;
+  }
+
   .imagenes__principal {
     flex-direction: column;
   }
